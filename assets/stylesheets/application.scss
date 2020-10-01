@@ -21,3 +21,7 @@ body {
   cursor: pointer;
   border: 6px solid transparent;
 }
+
+.flat:nth-last-child(1), .flat:nth-last-child(2) {
+  margin-bottom: 20px;
+}

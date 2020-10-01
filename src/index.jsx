@@ -7,9 +7,9 @@ import {createStore, combineReducers} from "redux";
 import '../assets/stylesheets/application.scss';
 
 import App from './components/app';
-import flatsReducers from './reducers/flat_reducer';
+import flatsReducer from './reducers/flats_reducer';
 const reducers = combineReducers({
-  flats: flatsReducers, 
+  flats: flatsReducer, 
 })
 
 //for every key in the redux state tree you have a single reducer doing the job of handling it
