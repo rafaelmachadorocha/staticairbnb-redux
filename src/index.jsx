@@ -16,7 +16,9 @@ const reducers = combineReducers({
 
 const root = document.getElementById('root');
 if (root) {
-  <Provider store={createStore(reducers)}>
-    <App />
-  </Provider>
+  ReactDOM.render(
+    <Provider store={createStore(reducers)}>
+      <App />
+    </Provider>, root
+  )
 }
