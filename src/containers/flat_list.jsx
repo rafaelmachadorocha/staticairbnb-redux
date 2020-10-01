@@ -11,6 +11,10 @@ class FlatList extends Component {
     }]
   }
 
+  componentWillMount() {
+    //dispatch an action to update the Redux state tree and the list of Flats
+  }
+
   render() {
     return (
       <div className="flatlist col-7" style={{height: "100vh",}}>

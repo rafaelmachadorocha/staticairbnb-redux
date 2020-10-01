@@ -9,7 +9,7 @@ class Flat extends Component {
     return (
       <div className="flat card-container">
         <div className="card" style={style}>
-          <h2 className="title-card" style={{color: 'rgb(40, 40, 40)', textShadow: '0 0 5px rgb(230, 230, 230)'}}><span>{this.props.flat.price}</span> <span>{this.props.flat.priceCurrency}</span></h2>
+          <h5 className="title-card" style={{color: 'rgb(40, 40, 40)', textShadow: '0 0 5px rgb(230, 230, 230)'}}><span>{this.props.flat.price}</span> <span>{this.props.flat.priceCurrency}</span></h5>
           <p className="description-card">{this.props.flat.name}</p>
         </div>
       </div>
