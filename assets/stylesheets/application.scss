@@ -20,8 +20,15 @@ body {
   flex: 50% 0 0;
   cursor: pointer;
   border: 6px solid transparent;
+  position: relative;
+  transition: relative;
 }
 
 .flat:nth-last-child(1), .flat:nth-last-child(2) {
   margin-bottom: 20px;
 }
+
+.selected > .card {
+  outline: 3px dashed red; 
+}
+

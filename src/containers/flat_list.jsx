@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Flat from "../components/flat"
+import Flat from "./flat"
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { setFlats } from '../actions';
@@ -25,7 +25,7 @@ class FlatList extends Component {
 
   render() {
     return (
-      <div className="flatlist col-7" style={{height: "100vh",}}>
+      <div className="flatlist col-7" style={{height: "100vh",}} onClick={this.handleClick}>
         {this.props.flats.map((flat) => <Flat flat={flat} key={flat.name}/>)}
       </div>
     )
