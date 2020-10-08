@@ -23,7 +23,9 @@ class FlatList extends Component {
 
     setTimeout(() => {
       this.props.setFlats();
-      this.props.hideSpinner();
+      if (this.props.flats !== []) {
+        this.props.hideSpinner();
+      }
     }, 2000);
     //dispatch an action to update the Redux state tree and the list of Flats 
   }
