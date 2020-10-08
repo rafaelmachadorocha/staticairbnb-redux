@@ -10,8 +10,8 @@ import '../assets/stylesheets/application.scss';
 
 import App from './components/app';
 import flatsReducer from './reducers/flats_reducer';
-import selectedFlatReducer from './reducers/selectedFlatReducer';
-import displaySpinnerReducer from './reducers/displaySpinnerReducer';
+import selectedFlatReducer from './reducers/selected_flat_reducer';
+import displaySpinnerReducer from './reducers/display_spinner_reducer';
 
 const reducers = combineReducers({
   flats: flatsReducer,
