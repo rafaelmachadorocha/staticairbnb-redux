@@ -18,7 +18,7 @@ class FlatList extends Component {
  //  }]
  // }
 
-  componentWillMount() {
+  UNSAFE_componentWillMount() {
     this.props.setFlats();
     //dispatch an action to update the Redux state tree and the list of Flats
   }
