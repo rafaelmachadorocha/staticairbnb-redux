@@ -3,6 +3,7 @@ import Flat from "./flat"
 import { bindActionCreators } from "redux";
 import { connect } from "react-redux";
 import { setFlats } from '../actions';
+import { hideSpinner } from '../actions';
 
 
 class FlatList extends Component {
@@ -19,8 +20,12 @@ class FlatList extends Component {
  // }
 
   UNSAFE_componentWillMount() {
-    this.props.setFlats();
-    //dispatch an action to update the Redux state tree and the list of Flats
+
+    setTimeout(() => {
+      this.props.setFlats();
+      this.props.hideSpinner();
+    }, 2000);
+    //dispatch an action to update the Redux state tree and the list of Flats 
   }
 
   render() {
@@ -34,7 +39,10 @@ class FlatList extends Component {
 
 function mapDispatchToProps(dispatch) {
   return bindActionCreators(
-    { setFlats: setFlats },
+    { 
+      setFlats: setFlats,
+      hideSpinner: hideSpinner
+    },
     dispatch
   );
   //this function makes the action avaiable in my container

@@ -11,10 +11,12 @@ import '../assets/stylesheets/application.scss';
 import App from './components/app';
 import flatsReducer from './reducers/flats_reducer';
 import selectedFlatReducer from './reducers/selectedFlatReducer';
+import displaySpinnerReducer from './reducers/displaySpinnerReducer';
 
 const reducers = combineReducers({
   flats: flatsReducer,
-  selectedFlat: selectedFlatReducer
+  selectedFlat: selectedFlatReducer,
+  displaySpinner: displaySpinnerReducer
 })
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;

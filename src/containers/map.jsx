@@ -6,8 +6,8 @@ class Map extends Component {
   render() {
     let marker = null;
     let center = { lat: 48.856614, lng: 2.352222 };
+    
     if (this.props.selectedFlat) {
-
         marker = <div style={{ width: '20px', height: '20px', backgroundColor: 'red', borderRadius: '50%' }}
         lat={this.props.selectedFlat.lat}
         lng={this.props.selectedFlat.lng} />;
