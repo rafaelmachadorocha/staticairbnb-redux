@@ -1,3 +1,5 @@
+import { SET_FLATS } from '../actions';
+
 export default function(state, action) {
 
   //compute and return the new state
@@ -7,7 +9,7 @@ export default function(state, action) {
   //that's the reducer initialization
   }
   switch (action.type) {
-    case "SET_FLATS":
+    case SET_FLATS:
       return action.payload;
     default:
       return state;
